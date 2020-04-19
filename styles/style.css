@@ -22,13 +22,13 @@
 
 .logo {
   /*border: 1px solid red;*/
-  position: absolute;
   background-image: url(../images/logo_place_header.svg);
 }
 
 .logo_place_header {  
-  margin-top: 30px;
-  margin-left: 64px;
+  position: absolute;
+  top: 30px;
+  left: 64px;
   width: 183px;
   height: 32px;
   z-index: 100;
@@ -257,7 +257,7 @@
 }
 
 .kaufman__title_theme_dark {
-  color: #ffffff;
+  color: white;
 }
 
 .kaufman__subtitle {
@@ -271,7 +271,11 @@
 }
 
 .kaufman__subtitle_theme_dark {
-  color: #ffffff;
+  color: white;
+}
+
+.table_theme_dark {
+  color: white;
 }
 
 /* и элемента с модификатором вида ключ-значение */
@@ -281,6 +285,14 @@
   margin-right: 0;
   margin-top: 80px;
   z-index: 2;
+}
+
+.table__heading_theme_dark {
+  color: white;
+}
+
+.table__text_theme_dark {
+  color: white;
 }
 
 .kaufman__triangle {
@@ -301,7 +313,7 @@
   position: relative;
   min-height: 350px;
   background-color: #1f1f1f;
-  color: #ffffff;
+  color: white;
 }
 
 .footer__columns {
@@ -313,23 +325,26 @@
   margin: 60px auto 40px auto;
 }
 
+.footer__column {
+  display: flex;
+}
+
 .footer__column_content_copyright {
   /*border: 1px solid grey;*/
   flex-basis: 711px;
-  display:flex;
+  flex-direction: column;
 }
 
 .logo_place_footer {
   /*border: 1px solid grey;*/
   background-image: url(../images/logo_place_footer.svg);
-  margin: 0;
   width: 183px;
   height: 35px;
+  margin-bottom: auto;
 }
 
 .footer__author {
   /*border: 1px solid grey;*/
-  align-self: flex-end;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -339,7 +354,7 @@
 .footer__column_content_info {
   /*border: 1px solid grey;*/
   margin: 0;
-  align-self: stretch;
+  flex-direction: column;
 }
 
 .footer__column-heading {
@@ -357,25 +372,24 @@
   margin: 20px 0 16px 0;
 }
 
+.links-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
 .footer__column_link {
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  color: #ffffff;
+  color: white;
   text-decoration: none;
+
 }
 .footer__column_content_social {
   /*border: 1px solid grey;*/
   margin: 0;
-  align-self: stretch;
-}
-
-.footer__column_social-link {
-  line-height: 30px;
-  font-size: 18px;
-  font-weight: normal;
-  color: #ffffff;
-  text-decoration: none;
+  flex-direction: column;
 }
 
 .footer__social-icon {
