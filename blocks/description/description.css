@@ -1,6 +1,4 @@
 .description {
   /*border: 2px solid orange;*/
-  display: flex;
-  justify-content: space-around;
   padding: 100px 0 0 0;
 }
